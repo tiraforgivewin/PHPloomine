@@ -52,7 +52,18 @@ echo "<pre>".trim($tekst2)."</pre>";
 echo "<pre>".ltrim($tekst2)."</pre>";
 echo "<pre>".rtrim($tekst2)."</pre>";
 
-echo trim($tekst2,);
+
+// PHP käsitleb teksti kui massiivi, kus esimene märk on indeksiga 0 jne.
+$tekst3 = 'Tana on vaga ilus esmaspaev!';
+echo "Esimene täht on ".$tekst3[0]; 				//T
+echo '<br>';
+echo "Neljas täht on ".$tekst3[4]; 				//a
+echo '<br>';
+// kolmas sõna
+$sona=str_word_count($tekst3,1);
+print_r($sona);
+echo $sona[2]
+
 
 
 
